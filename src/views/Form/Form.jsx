@@ -39,7 +39,7 @@ const validate = (form)=> {
 
 const submitHandler = (event)=> {
      event.preventDefault();
-     axios.post("http://localhost:3001/users", form)
+     axios.post("/users", form)
        .then (res=> alert(res))
        .catch (err=> alert(err))
 
